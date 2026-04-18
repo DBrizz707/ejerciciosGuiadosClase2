@@ -1,0 +1,32 @@
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int main(){
+    double radio, areaCirculo, areaCirculo2;
+    int base, altura, areaTriangulo;
+
+    cout << "Area del circulo" << endl;
+    cout << "Por favor podria digitar el radio del circulo: ";
+    cin >> radio;
+
+    areaCirculo = 3.1416 * radio * radio;
+    areaCirculo2 = 3.1416 * pow(radio, 2); // "Pow" hace que el número se eleve a la potencia indicada
+
+    cout << "Su area del circulo es la siguiente: " << areaCirculo << endl;
+    cout << "Su area del circulo es la siguiente: " << areaCirculo2 << endl;
+
+    cout << "Area del triangulo" << endl;
+    cout << "Por favor podria digitar la base del triangulo: ";
+    cin >> base;
+
+    cout << "Por favor podria digitar la altura del triangulo: ";
+    cin >> altura;
+
+    areaTriangulo = (base * altura)/2;
+
+    cout << "Su area del triangulo es la siguiente: " << areaTriangulo << endl;
+
+    return 0;
+}
